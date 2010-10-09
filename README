@@ -1,0 +1,12 @@
+XML To Any uses XSLT 1.0 to do non-schema aware transformation of incoming XML source to a different format. Currently JSON, JSON-P, Lua, Verbose Lua formats are supported.
+
+There is a XSLT 1.0 processing library available for every major language e.g.  For Java. PHP is used here just for demonstration purposes.
+
+The query parameters are -
+
+    format - Desired format. luax (Lua Verbose), lua (Lua Compact), json, jsonp (JSON with padding).
+    callback - Callback function name for jsonp format.
+    url - URL of the XML source.
+    decimalSupported - This is not a query parameter but a transformer parameter. Currently it is set to 'no'. If set to 'yes', it will not put decimal numbers in quotes. 
+    
+PS- I did this to try out iPhone Wax.
